@@ -32,13 +32,27 @@
             color: #212121;
             list-style: none;
             text-decoration: none;
+            position: relative;
             
         
 }
 .navigation:hover, .navigation:focus {
-    color: #2196F3;;
+    color: #2196F3;
 
 }
+.navigation:hover:after{
+    content: "";
+        position: absolute;
+        bottom:0 ;
+        display: block;
+        width: 100%;
+        height: 4px;
+        border-radius: 4px;
+        background-color: #2196F3;
+       
+  
+}
+
 .contacts {
 font-family: 'Roboto',sans-serif;
     
@@ -306,6 +320,30 @@ padding-bottom: 210px;
 }
 .gallery-section {
     padding-bottom: 94px;
+}
+.gallery-wrap{
+    position: relative;
+}
+.gallery-item:hover .gallery-top-text{
+    transform: translateY(0);
+}
+.gallery-wrap{
+   
+}
+.gallery-top-text{
+    position: absolute;
+        bottom: 0;
+        font-size: 16px;
+        color: #ffffff;
+        line-height: 1.6;
+        background-color: rgba(47, 48, 58, 0.8);
+        padding: 0 ;
+        height: 70px;
+        width: 370px;
+        
+        transform: translateY(100%);
+        transition: transform 300ms linear;
+        margin: 0px;
 }
 
 .co-worker-name{
