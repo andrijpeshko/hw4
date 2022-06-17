@@ -33,14 +33,26 @@
             list-style: none;
             text-decoration: none;
             position: relative;
-            
+            padding-bottom: 32px;
+            padding-top: 32px;
+            transition-property:color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         
 }
 .navigation:hover, .navigation:focus {
     color: #2196F3;
+    
 
 }
-.navigation:hover:after{
+
+.navigation::after{
+    transition-property:background-color color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation:hover::after{
     content: "";
         position: absolute;
         bottom:0 ;
@@ -63,6 +75,10 @@ font-family: 'Roboto',sans-serif;
 
     color: #757575;
     text-decoration: none;
+        transition-property: background-color color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        
     
 }
 .contact-list, .gallery, .about, .co-worker-list, .contact-list-footer, .nav-list {
@@ -83,6 +99,12 @@ font-family: 'Roboto',sans-serif;
     width: 1200px;
     
     
+}
+.icon{
+        transition-property: background-color color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        
 }
 .header{
     padding-top: 25px;
@@ -323,13 +345,12 @@ padding-bottom: 210px;
 }
 .gallery-wrap{
     position: relative;
+    display:flex;
+    justify-content: center;
+    align-items:center;
 }
-.gallery-item:hover .gallery-top-text{
-    transform: translateY(0);
-}
-.gallery-wrap{
-   
-}
+
+
 .gallery-top-text{
     position: absolute;
         bottom: 0;
@@ -339,11 +360,13 @@ padding-bottom: 210px;
         background-color: rgba(47, 48, 58, 0.8);
         padding: 0 ;
         height: 70px;
-        width: 370px;
+       width: 370px; 
+      
         
-        transform: translateY(100%);
-        transition: transform 300ms linear;
+      
+        
         margin: 0px;
+        
 }
 
 .co-worker-name{
@@ -439,6 +462,9 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
             align-self: center;
             margin: 0px;
             padding: 0px;
+            transition-property: background-color color;
+                transition-duration: 250ms;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:hover, .social-link:focus{
     
@@ -538,6 +564,12 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
 }
 .clients-link{
     color: #AFB1B8
+    
+}
+.clients-link{
+    transition-property: background-color color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* ----------------------------footer---------------------------- */
 .address {
@@ -653,6 +685,9 @@ display: flex;
         align-self: center;
         margin: 0px;
         padding: 0px;
+        transition-property: background-color color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link-footer:hover, .social-link-footer:focus {
 
