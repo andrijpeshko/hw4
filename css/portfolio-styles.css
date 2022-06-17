@@ -265,6 +265,9 @@ padding-bottom: 20px;
     
     
 }
+a{
+    text-decoration: none;
+}
 ------------------------------footer------------------------- */
 .address {
     font-family: 'Roboto', sans-serif;
