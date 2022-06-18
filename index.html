@@ -63,7 +63,7 @@
         <section class="hero">
             <div class="hero-container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="btn">Заказать услугу</button>
+                <button type="button" class="btn "data-modal-open>Заказать услугу</button>
             </div>
             
         </section>
@@ -139,7 +139,7 @@
                 <ul class="gallery">
                     <li class="gallery item">
                         <div class="gallery-wrap">
-                            <img src="./img/about-img3.jpg" alt="фото робот" width="370" height="294">
+                            <img src="./img/about-img1.jpg" alt="фото робот" width="370" height="294">
                     <p class="gallery-top-text">
                         Десктопные приложения
 
@@ -157,7 +157,7 @@
                     
                         <li>
                             <div class="gallery-wrap">
-                                <img src="./img/about-img1.jpg" alt="фото робот" width="370" height="294">
+                                <img src="./img/about-img3.jpg" alt="фото робот" width="370" height="294">
                                 <p class="gallery-top-text">
                                     Дизайнерские решения
                                 </p>
@@ -444,10 +444,18 @@
         </div>
     
     </footer>
-    
+    <div class="backdrop is-hidden"  data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close-btn "data-modal-close>
+                <svg class="close-icon" width="11" height="11">
+                    <use href="./img/close-img.svg#icon-close-img"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
 
 
-
+<script src="./js/modal.js"></script>
     
 </body>
 </html>
